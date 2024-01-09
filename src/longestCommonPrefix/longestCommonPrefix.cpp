@@ -8,7 +8,6 @@
  * 提取出的字符串和从2开始对比，并返回相似字符串
  * 直到相似字符串为0时中断寻找
 */
-
 std::string LongestCommonPrefixSolution::longestCommonPrefix(const std::string str1, const std::string str2) {
     int length = std::min(str1.size(), str2.size());
     int index = 0;

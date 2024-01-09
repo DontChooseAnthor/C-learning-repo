@@ -1,4 +1,4 @@
-#ifndef _LONGESTCOMMONPREFIX_H_
+#ifndef LONGEST_COMMON_PREFIX
 
 #include <vector>
 

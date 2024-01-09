@@ -1,4 +1,4 @@
-#ifndef _TWOSUM_H_
+#ifndef TWO_SUM
 
 #include <vector>
 
