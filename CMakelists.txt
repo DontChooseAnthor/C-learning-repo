@@ -12,6 +12,7 @@ set (
         ${CMAKE_CURRENT_SOURCE_DIR}/src/twoSum/twoSum.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/longestCommonPrefix/longestCommonPrefix.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/htmlChartParse/htmlChartParse.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/deleteFixSubString/deleteFixSubString.cpp
 
 )
 
