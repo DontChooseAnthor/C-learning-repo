@@ -4,7 +4,7 @@
 class DeleteFixSubStringSolution
 {
 public:
-    std::string deleteFixSubString(std::string str, std::string arr[]);
+    int deleteFixSubString(std::string str, std::string arr[]);
 };
 
 #endif/*include deleteFixSubString.h*/

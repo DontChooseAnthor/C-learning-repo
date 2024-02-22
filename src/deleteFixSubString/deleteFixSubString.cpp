@@ -15,11 +15,26 @@ std::string strRemoveFn(std::string str, std::string curStr) {
     return regex_replace(str, pattern, "");
 }
 
-std::string DeleteFixSubStringSolution::deleteFixSubString(std::string str, std::string arr[]) {
+std::string getRegexMatchStr(std::string str, std::string arr[]) {
     for (int i = 0; i < arr->length(); ++i) {
-        str = strRemoveFn(str, arr[i]);
+        std::regex e(arr[i]);
+        if (std::regex_search(str, e)) {
+            return arr[i];
+        }
     }
-    return str;
+    return "";
+}
+
+int DeleteFixSubStringSolution::deleteFixSubString(std::string str, std::string arr[]) {
+    for (;;) {
+        std::string resStr = getRegexMatchStr(str, arr);
+        if (resStr.length() == 0) {
+            break;
+        } else {
+            str = strRemoveFn(str, resStr);
+        }
+    }
+    return str.length();
 }
 
 // int main()
@@ -30,4 +45,3 @@ std::string DeleteFixSubStringSolution::deleteFixSubString(std::string str, std:
 //     std::string res = s.deleteFixSubString(str, arr);
 //     std::cout<<res<<std::endl;
 // }
-

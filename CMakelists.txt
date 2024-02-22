@@ -13,7 +13,7 @@ set (
         ${CMAKE_CURRENT_SOURCE_DIR}/src/longestCommonPrefix/longestCommonPrefix.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/htmlChartParse/htmlChartParse.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/deleteFixSubString/deleteFixSubString.cpp
-
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/symmetricBinaryTree/symmetricBinaryTree.cpp
 )
 
 add_executable(repo_cmake ${SRC})
