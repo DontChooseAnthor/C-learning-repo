@@ -1,3 +1,6 @@
+//
+//  将一段html转义字符转为原本的符号
+//
 #include "string"
 #include <map>
 #include "htmlChartParse.h"
