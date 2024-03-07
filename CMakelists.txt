@@ -9,12 +9,14 @@ project(C-learning-repo)
 set (
         SRC
         ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/utils.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/twoSum/twoSum.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/longestCommonPrefix/longestCommonPrefix.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/htmlChartParse/htmlChartParse.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/deleteFixSubString/deleteFixSubString.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/symmetricBinaryTree/symmetricBinaryTree.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/binarySum/binarySum.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/flipAndInvertImage/flipAndInvertImage.cpp
 )
 
 add_executable(repo_cmake ${SRC})
