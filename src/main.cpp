@@ -8,6 +8,8 @@
 #include <new>
 #include <string>
 #include <sstream>
+#include <stdlib.h>
+#include <stdio.h>
 #include <stdexcept>
 #include <vector>
 
@@ -22,7 +24,16 @@
 
 using namespace std;
 
+
 int main()
 {
-
+    // const int *pi;
+    // int a = 10;
+    // pi = &a;
+    // std::cout<< pi << std::endl;
+    int a = 10;
+    int b = 20;
+    int *const pi = &a;
+    std::cout<< pi << std::endl;
 }
+
